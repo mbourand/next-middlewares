@@ -14,10 +14,10 @@ You can use the type `MiddlewareType` to get guidance and benefit from type infe
 
 ```TS
 export const withConsoleLog: MiddlewareType = (handler) => {
-	return (request, context) => {
-		console.log('Middleware called!!')
-		return handler(request, context)
-	}
+  return (request, context) => {
+    console.log('Middleware called!!')
+    return handler(request, context)
+  }
 }
 ```
 
@@ -67,7 +67,7 @@ To apply the middlewares to a Route Handler, it is almost like writing a normal 
 // route.ts
 const BodySchema = z.object({ message: z.string() })
 
-//                                                     Type-safe retrieval of the variables added by the middlewares
+//                                          Type-safe retrieval of the variables added by the middlewares
 //                                                                                     |
 //                         Choosing the middlewares                                    |
 //                                       v                                             v
