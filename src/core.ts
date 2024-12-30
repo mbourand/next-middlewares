@@ -1,4 +1,4 @@
-import { BFFApiHandler, CustomApiHandler, MiddlewareType } from '@/types'
+import { BFFApiHandler, CustomApiHandler, MiddlewareType } from './types'
 import { NextRequest } from 'next/server'
 
 export const applyMiddlewares = <const Middlewares extends readonly MiddlewareType<any>[]>(
