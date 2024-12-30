@@ -1,4 +1,4 @@
-# Next Middleware
+# Next Middlewares
 
 _Library adding support for route-level middlewares in Next's App Router routes_
 
